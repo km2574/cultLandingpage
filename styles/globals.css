@@ -1,0 +1,105 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    /* background-color: rgb(15,15,15); */
+    width: 100% !important;
+    color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* .custom {
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+
+.custom-button {
+  width: 80% !important;
+  margin: 0 auto !important;
+  align-content: center;
+  display: flex;
+  background-color: #00a99d !important;
+} */
+
+
+.custom-button{
+  background-color: #00a99d !important;
+}
+
+.buyNowText{
+  font-size: 22px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 0em;
+  color: black;
+  font-weight: bold;
+}
+
+.buyButton{
+  background-color: #00a99d !important;
+}
+.container .animate-text::after{
+  content: '';
+  color: #00a99d;
+  animation: profile 5s infinite;
+  display: block !important;
+}
+@keyframes profile {
+  0% { content: 'weight-loss'}
+  50% { content: 'fitness'}
+  100% { content: 'energy'}
+}
+
+.play-cta button {
+  cursor: pointer;
+  background-color: #00a99d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-animation: all 300ms ease-in-out;
+}
+
+
+
+.play-cta button:hover{
+  transform: scale(1.2);
+}
+
+.play-cta::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 16px 0 16px 20px;
+  top: 0;
+  border-color: transparent transparent transparent #00a99d;
+  display: inline-flex;
+  margin-top: 4px;
+}
+
+.play-cta button:hover + ::after {
+  padding-left: 20px;
+}
+
+#animated {
+  transition: transform 300ms ease-in-out;
+  -moz-transition: transform 300ms ease-in-out;
+  -webkit-animation: transform 300ms ease-in-out;
+}
+
+#animated::after {
+  transform: translateX(10px);
+}
+
